@@ -6,4 +6,10 @@
   </view>
 </swiper>
 
-<view class="newList"></view>
+<view class="news-list">
+  <view class="news-item" wx:for="{{newsList}}" wx:key="{{item.id}}">
+    <image src="{{item.poster}}"></image>
+    <text>{{item.title}}--{{item.add_date}}</text>
+  </view>
+  <button plain="true">加载更多</button>
+</view>
