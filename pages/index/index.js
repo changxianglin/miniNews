@@ -4,6 +4,17 @@ const app = getApp()
 
 Page({
   data: {
+    swiperImg: [
+      {
+        src: "http://www.xinhuanet.com/politics/2020-02/23/1125614596_15824386908231n.jpg",
+      },
+      {
+        src: "http://www.xinhuanet.com/politics/2020-02/23/1125614596_15824387057291n.jpg",
+      },
+      {
+        src: "http://www.xinhuanet.com/politics/2020-02/23/1125614596_15824387199371n.jpg",
+      }
+    ],
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,

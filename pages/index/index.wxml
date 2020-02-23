@@ -1,1 +1,9 @@
-<view></view>
+<swiper indicator-dots="true" autoplay="true" interval="5000" duration="500">
+  <view wx:for="{{swiperImg}}" wx:key="index">
+  <swiper-item>
+    <image src="{{item.src}}"></image>
+  </swiper-item>
+  </view>
+</swiper>
+
+<view class="newList"></view>
