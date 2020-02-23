@@ -1,1 +1,28 @@
-/* pages/detail/detail.wxss */
+.container {
+  padding: 15rpx;
+}
+
+.title {
+  font-size: 35rpx;
+  line-height: 25rpx;
+  text-align: center;
+  margin: 20rpx;
+}
+
+.poster image {
+  width: 100%;
+}
+
+.content text {
+  text-align: left;
+  font-size: 30rpx;
+  line-height: 30rpx;
+}
+
+.add_date {
+  font-size: 30rpx;
+  text-align: right;
+  line-height: 30rpx;
+  margin-right: 25rpx;
+  margin-top: 20rpx;
+}
