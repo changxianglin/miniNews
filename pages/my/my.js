@@ -5,7 +5,15 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    nickName: '未登录',
+    src: '/images/index1.png',
+    newsList: [
+      {
+        id: "1",
+        title: "10天 是建设者拼尽的全力",
+        poster: "http://www.xinhuanet.com/politics/2020-02/23/1125614596_15824386476101n.jpg",
+        add_date: "2020-02-21 14:34:18",
+      },]
   },
 
   /**
