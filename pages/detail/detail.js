@@ -48,7 +48,8 @@ Page({
       let result = common.getNewsDetail(id)
       if (result.code == '200') {
         this.setData({
-          article: result.news
+          article: result.news,
+          isAdd: false
         })
       }
     }
