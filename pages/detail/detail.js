@@ -6,7 +6,7 @@ Page({
    */
   data: {
     article: {
-      id: '122',
+      id: '1',
       title: '5米不得见 是对岗位的坚守',
       poster: 'http://www.xinhuanet.com/politics/2020-02/23/1125614596_15824386476101n.jpg',
       add_date: '2020-02-23 14:34:18',
