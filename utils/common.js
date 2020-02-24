@@ -36,7 +36,6 @@ function getNewsList() {
   return list
 }
 
-
 function getNewsDetail(newsID) {
   let message = {
     code: '404',
@@ -52,4 +51,9 @@ function getNewsDetail(newsID) {
   }
 
   return message
+}
+
+module.exports = {
+  getNewsList,
+  getNewsDetail
 }

@@ -1,6 +1,7 @@
 //index.js
 //获取应用实例
 const app = getApp()
+const common = require('../../utils/common.js')
 
 Page({
   data: {
@@ -15,38 +16,29 @@ Page({
         src: "http://www.xinhuanet.com/politics/2020-02/23/1125614596_15824387199371n.jpg",
       }
     ],
-    newsList: [
-      {
-        id: "1",
-        title: "10天 是建设者拼尽的全力",
-        poster: "http://www.xinhuanet.com/politics/2020-02/23/1125614596_15824386476101n.jpg",
-        add_date: "2020-02-21 14:34:18",
-      },
-      {
-        id: "2",
-        title: "1个月 是众志成城 守护生命的决心",
-        poster: "http://www.xinhuanet.com/politics/2020-02/23/1125614596_15824387316681n.jpg",
-        add_date: "2020-02-22 14:34:18",
-      },
-      {
-        id: "3",
-        title: "14亿颗心 构筑起坚不可摧的人民防线",
-        poster: "http://www.xinhuanet.com/politics/2020-02/23/1125614596_15824387395581n.jpg",
-        add_date: "2020-02-23 14:34:18",
-      },
-    ],
+    newsList: [],
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   //事件处理函数
+  gotoDetail: function(e) {
+    let id = e.currentTarget.dataset.id
+    wx.navigateTo({
+      url: "../detail/detail?id=" + id
+    })
+  },
   bindViewTap: function() {
     wx.navigateTo({
       url: '../logs/logs'
     })
   },
   onLoad: function () {
+    let list = common.getNewsList()
+    this.setData({
+      newsList: list
+    })
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
